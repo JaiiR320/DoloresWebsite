@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@font-face {
+  font-family: 'Quiche-Regular';
+  src: url("./Quiche Regular/QuicheText-Regular.eot");
+  src: url("./Quiche Regular/QuicheText-Regular.otf");
+  src: url("./Quiche Regular/QuicheText-Regular.ttf");
+}
+@font-face {
+  font-family: 'Quiche-Bold';
+  src: url("./Quiche Bold/QuicheText-Bold.eot");
+  src: url("./Quiche Bold/QuicheText-Bold.otf");
+  src: url("./Quiche Bold/QuicheText-Bold.ttf");
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Quiche-Regular, sans-serif !important;
+  color: #222;
+}
+.bold-words {
+  font-family: Quiche-Bold, sans-serif;
+  color: #385CC7;
+  font-weight: 900;
+  background-color: rgba(0, 0, 0, 0);
+}
+.active {
+  font-family: Quiche-Bold;
+}
+.navbar {
+  padding: .8rem;
+}
+.navbar-nav li {
+  padding-right: 1.3rem;
+}
+.nav-link {
+  font-size: 1.3em !important;
+  color: #385CC7 !important;
+}
+.top-left-logo {
+  width: auto;
+  height: 85px;
+}
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-caption h1 {
+  font-size: 500%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #000;
+}
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+}
+.btn-primary {
+  background-color: #385CC7;
+  border: 1px solid #385CC7;
+}
+.btn-primary:hover {
+  background-color: #5f7dd9;
+  border: 1px solid #5f7dd9;
+}
+#order-btn {
+  position: relative;
+  top: 35%;
+  padding: 3%;
+  font-size: 34px;
+  text-shadow: 6px 6px 10px #000;
+}
+.jumbotron {
+  padding: 1rem;
+  border-radius: 0;
+  text-align: center;
+  font-size: x-large;
+}
+#reminder p {
+  margin-bottom: 0;
+}
+.padding {
+  padding-bottom: 2rem;
+}
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-youtube {
+  color: #ff0000;
+}
+.fa-instagram {
+  color: #517fa8;
+}
+.fa-facebook:hover,
+.fa-youtube:hover,
+.fa-instagram:hover {
+  color: #d5d5d5;
+}
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+footer a {
+  color: #d5d5d5;
+}
+hr.light-100 {
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+.footer-img {
+  width: 190px;
+  height: auto;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-caption {
+    top: 45%;
+  }
+  .carousel-caption h1 {
+    font-size: 350%;
+  }
+  .carousel-caption h3 {
+    font-size: 140%;
+    font-weight: 400;
+    padding-bottom: .2rem;
+  }
+  .carousel-caption .btn {
+    font-size: 95%;
+    padding: 8px 14px;
+  }
+  .display-4 {
+    font-size: 200%;
+  }
+  .social a {
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+  .carousel-caption {
+    top: 40%;
+  }
+  .carousel-caption h1 {
+    font-size: 250%;
+  }
+  .carousel-caption h3 {
+    font-size: 110%;
+
+  }
+  .carousel-caption .btn {
+    font-size: 90%;
+    padding: 4px 8px;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+  .display-4 {
+    font-size: 160%;
+  }
+  .social a {
+    font-size: 2em;
+    padding: .7rem;
+  }
+}
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 65%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('./img/horz-plat-frosted-blue.jpg');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
