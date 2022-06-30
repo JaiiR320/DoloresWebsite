@@ -18,6 +18,12 @@ class DNavi extends HTMLElement {
                     <li id="menu" class="nav-item ${(this.getAttribute('active') === 'menu' ? "active" : "")}">
                         <a class="nav-link" href="/menu.html">Menu</a>
                     </li>
+                    <li id="reservation" class="nav-item ${(this.getAttribute('active') === 'reserve' ? "active" : "")}">
+                        <a class="nav-link" href="/reservation.html">Reserve</a>
+                    </li>
+                    <li id="order" class="nav-item ${(this.getAttribute('active') === 'order' ? "active" : "")}">
+                        <a class="nav-link" href="/order.html">Order</a>
+                    </li>
                 </ul>
             </div>
         </div>
