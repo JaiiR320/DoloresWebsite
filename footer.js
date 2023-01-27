@@ -20,13 +20,13 @@ class DFooter extends HTMLElement {
                     <h5>Our Hours</h5>
                     <hr class="light">
                     <div>
-                        <p>Saturday 4-10</p>
-                        <p>Sunday 11AM-3PM</p>
-                        <p>Monday 4-9PM</p>
+                        <p>Sunday Brunch 11AM-3PM</p>
+                        <p>Monday 4PM-10PM</p>
                         <p>Tuesday CLOSED</p>
-                        <p>Wednesday 4-9PM</p>
-                        <p>Thursday 4-9PM</p>
-                        <p>Friday 4-10PM</p>
+                        <p>Wednesday 4PM-10PM</p>
+                        <p>Thursday 4PM-10PM, 10PM-11:30PM Late Night Menu</p>
+                        <p>Friday 4PM-10PM, 10PM-11:30PM Late Night Menu</p>
+                        <p>Saturday 4PM-10PM, 10PM-11:30PM Late Night Menu</p>
                     </div>
                 </div>
                 <div class="col-md-2"></div>
