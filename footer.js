@@ -1,5 +1,5 @@
 class DFooter extends HTMLElement {
-    constructor(){
+    constructor() {
         super();
         this.innerHTML = `
         <footer>
@@ -24,7 +24,7 @@ class DFooter extends HTMLElement {
                         <p>Monday 4PM-10PM</p>
                         <p>Tuesday CLOSED</p>
                         <p>Wednesday 4PM-10PM</p>
-                        <p>Thursday 4PM-10PM, 10PM-11:30PM Late Night Menu</p>
+                        <p>Thursday 4PM-10PM</p>
                         <p>Friday 4PM-10PM, 10PM-11:30PM Late Night Menu</p>
                         <p>Saturday 4PM-10PM, 10PM-11:30PM Late Night Menu</p>
                     </div>
